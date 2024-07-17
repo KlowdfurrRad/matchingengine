@@ -1,0 +1,10 @@
+To fix : As we have a treemap for every symbol there is problem when there are >= 2 orders at same price
+Need to fix by making the treemap<int,queue>!
+
+Also : In the current implemtentation there is a pain while loop in the engine.
+To make it better : Use a synchronised order_request function in request engine. And then there is no need for a ConcurrentLinkedQueue as well.
+
+Also I did a bad matcher. Should technically do least key more than and all for matching more number of orders...
+
+
+Nice : https://www.youtube.com/watch?v=dLfnEKf1AFo
